@@ -80,12 +80,17 @@ input {
 .container {
   max-width: 1440px;
   width: 100%;
+  margin: 0 auto;
 }
 .subcont {
   padding: 64px 16px;
   /* display: flex; */
   flex-wrap: wrap;
- 
+}
+
+.subcontainer {
+  max-width: 536px;
+  width: 100%;
 }
 
 .section-title {
@@ -94,18 +99,20 @@ input {
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
-  line-height: 45px; /* 140.625% */
+  line-height: 1.41;
   text-transform: uppercase;
 }
 .section-text {
   margin-top: 20px;
   margin-bottom: 30px;
+  max-width: 536px;
+  width: 100%;
   color: var(--blue-font, #0a224a);
   font-family: Roboto;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 27px; /* 150% */
+  line-height: 1.5;
 }
 
 .subscribe {
@@ -116,6 +123,7 @@ input {
 
 .subscribe-input {
   margin-bottom: 20px;
+  max-width: 536px;
   width: 100%;
   height: 50px;
   background-color: transparent;
@@ -134,9 +142,12 @@ input {
   color: var(--error-state);
 }
 
-/* ---------------znak okliku--------- */
+/* ---------------znak okliku---------------------------------- */
 .wrap-subscribe-input {
   position: relative;
+  display: inline-block;
+  max-width: 536px;
+  width: 100%;
 }
 .subscribe-icon-error {
   position: absolute;
@@ -159,7 +170,6 @@ input {
 .subscribe-accent {
   margin-left: 8px;
 
-  
   color: #7a7a7a;
   font-family: Roboto;
   font-size: 16px;
@@ -194,12 +204,12 @@ input {
 .checkbox-subscribe-input {
 }
 .subscribe-checkbox-text {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .subscribe-check {
-  width: 25px;
-  height: 25px;
+  max-width: 25px;
+  max-height: 25px;
 }
 
 .check-span {
@@ -212,7 +222,8 @@ input {
   border: 1px solid var(--dark-grey, #b6b6b6);
   border-radius: 2px;
   transition: background-color 350ms cubic-bezier(0.4, 0, 0.2, 1),
-    /* border 250ms cubic-bezier(0.4, 0, 0.2, 1), */ fill 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* border 250ms cubic-bezier(0.4, 0, 0.2, 1), */ fill 350ms
+      cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-check:checked + .subscribe-label-text .check-span {
@@ -246,51 +257,56 @@ input {
 @media screen and (min-width: 1440px) {
   .subcont {
     display: flex;
-    width: 100%;      
+    width: 100%;
     align-items: center;
     /* justify-content: space-between; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     padding: 100px 140px 86px;
+    gap: 100px;
   }
+
+  .wrap-subscribe-input {
+    max-width: 536px;
+  }
+
   .subscribe-pic {
     max-width: 460px;
   }
-  .section-text { 
-  margin-bottom: 20px; 
-}
-  .section-text{
-color: var(--blue-font, #0A224A);
-font-family: Roboto;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 27px; /* 150% */
-}
+  .section-text {
+    margin-bottom: 20px;
+  }
+  .section-text {
+    color: var(--blue-font, #0a224a);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px; /* 150% */
+  }
 
-.subscribe-accent {
-  color: #7A7A7A;
-font-family: Roboto;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 27px; /* 150% */
-}
+  .subscribe-accent {
+    color: #7a7a7a;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px; /* 150% */
+  }
 }
 /* ------------------------------------------------------------------ */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .subcontainer {
-    width: 536px;
+    max-width: 536px;
   }
-  .section-text {  
-  margin-bottom: 20px;  
-}
-.subcont {
-  padding: 100px 32px;
-  /* display: flex; */
-  /* flex-wrap: wrap; */
- 
-}
-
+  .section-text {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .subcont {
+    padding: 100px 32px;
+    /* display: flex; */
+    flex-wrap: wrap;
+  }
 }
 
 /* ------------------------------------------------------------------ */
