@@ -84,9 +84,8 @@ input {
 .container {
     padding-top: 64px;
     padding-bottom: 64px;
-      /* background-color: var(--light-blue); */
-      background-color: rgb(199, 188, 199);
-      z-index: -1;
+      background-color: var(--light-blue);
+      /* background-color: rgb(199, 188, 199); */
 }
 .section-title {
     text-align: center;
@@ -112,24 +111,44 @@ text-transform: uppercase;
  .client-list {
     display: flex;
     flex-direction: row;
-    justify-content: baseline;
-    align-items: baseline;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin: 0 auto;
+    gap: 24px;
 
  }
 
 .client-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: stretch;
     
     
     background-color:var(--white);
-flex-basis: calc((100% - 48px) / 3)
+width: calc((100% - 48px) / 3)
 }
 .client-accent {
 }
 .client-text {
-    display: block;
     max-width: 360px;
+    padding: 16px 32px 32px;
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 4px;
+}
+.wrap-img {
+    display: flex;
+    margin: 32px auto 0px 32px;
+    gap: 14px;
+    align-items: center;
+}
+.wrap-title {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+}
+.client-item:nth-child(3) {
+  color: rgb(186, 24, 24);
 }

@@ -242,7 +242,7 @@ input {
 }
 
 .subscribe-picture {
-  background:  lightgray -83.046px 0px / 137.761% 100% no-repeat;
+  background: var(--light-gray) -83.046px 0px / 137.761% 100% no-repeat;
 }
 
 /* ------------------------------------------------------------------ */
