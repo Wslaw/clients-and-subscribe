@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
   </head>
   <body>
-    <section class="clients" id="clients">
+    <section class="clients">
       <div class="container">
         <h2 class="section-title">Clients reviews</h2>
         <div class="clients-wrap">
-          <ul>
-            <li>
-              <img src="./images/client-retina/optimize/client-1-pc-1x-min.png" alt="" />
+          <ul class="client-list">
+            <li class="client-item">
+              <img src="./images/client-retina/optimize/client-1-pc-1x-min.png" alt="Alexandra dream"  width="56"
+              height="56" />
               <h3 class="client-subtitle">Alexandra dream</h3>
               <span class="client-accent">1 week ago</span>
               <p class="client-text">
@@ -25,8 +26,9 @@
                 designed, and you can tell that a lot of thought and care goes into every detail.
               </p>
             </li>
-            <li>
-              <img src="./images/client-retina/optimize/client-2-pc-1x-min.png" alt="" />
+            <li class="client-item">
+              <img src="./images/client-retina/optimize/client-2-pc-1x-min.png" alt="James Williams"  width="56"
+              height="56"/>
               <h3 class="client-subtitle">James Williams</h3>
               <span class="client-accent">A week ago</span>
               <p class="client-text">
@@ -34,8 +36,9 @@
                 living space. The sturdy construction is worth noting too, which speaks volumes about its durability.
               </p>
             </li>
-            <li>
-              <img src="./images/client-retina/optimize/client-3-pc-1x-min.png" alt="" />
+            <li class="client-item">
+              <img src="./images/client-retina/optimize/client-3-pc-1x-min.png" alt="Emily Watson"  width="56"
+              height="56"/>
               <h3 class="client-subtitle">Emily Watson</h3>
               <span class="client-accent">3 week ago</span>
               <p class="client-text">
@@ -47,53 +50,5 @@
         </div>
       </div>
     </section>
-    <section class="team" data-slider="team-slider">
-        <div class="container">
-          <h2 class="section-title team__title">WHAT OUR COSTUMER’S SAY</h2>
-          <div class="swiper team__slider">
-            <ul class="swiper-wrapper">
-              <li class="swiper-slide team__item">
-                <img src="./images/client-retina/barba1.jpg" alt="team member" class="team__img" />
-                <h3 class="team__name">Jon Doe</h3>
-                <p class="team__position">Company Inc.</p>
-                <div class="team__desc">
-                  <p>
-                    Vestibulum placerat nisl quis justo venenatis, et lacinia nunc venenatis. semper libero nec sapien condimentum dignissim. Nunc ante ligula, tempor in tellus in, gravida vestibulum justo. Nulla facilisi. Nullam tristique eros quis nibh tempus, vel viverra dolor pretium. Nam et
-                    vehicula leo. Vivamus hendrerit sit amet ante a tempus. Aenean gravida massa et ante pulvinar, id
-                  </p>
-                </div>
-              </li>
-              <li class="swiper-slide team__item">
-                <img src="./images/client-retina/barba2.jpg" alt="team member" class="team__img" />
-                <h3 class="team__name">Jon Doe</h3>
-                <p class="team__position">Company Inc.</p>
-                <div class="team__desc">
-                  <p>
-                    Vestibulum placerat nisl quis justo venenatis, et lacinia nunc venenatis. semper libero nec sapien condimentum dignissim. Nunc ante ligula, tempor in tellus in, gravida vestibulum justo. Nulla facilisi. Nullam tristique eros quis nibh tempus, vel viverra dolor pretium. Nam et
-                    vehicula leo. Vivamus hendrerit sit amet ante a tempus. Aenean gravida massa et ante pulvinar, id
-                  </p>
-                </div>
-              </li>
-              <li class="swiper-slide team__item">
-                <img src="./images/client-retina/barba3.jpg" alt="team member" class="team__img" />
-                <h3 class="team__name">Jon Doe</h3>
-                <p class="team__position">Company Inc.</p>
-                <div class="team__desc">
-                  <p>
-                    Vestibulum placerat nisl quis justo venenatis, et lacinia nunc venenatis. semper libero nec sapien condimentum dignissim. Nunc ante ligula, tempor in tellus in, gravida vestibulum justo. Nulla facilisi. Nullam tristique eros quis nibh tempus, vel viverra dolor pretium. Nam et
-                    vehicula leo. Vivamus hendrerit sit amet ante a tempus. Aenean gravida massa et ante pulvinar, id
-                  </p>
-                </div>
-              </li>                           
-            </ul>
-
-            <ul class="swiper-pagination team__pagination"></ul>
-          </div>
-        </div>
-      </section>
-      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
-    <script defer src="./js/mobile-menu.js"></script>
-    <script src="./js/main.js"></script>
   </body>
 </html>
