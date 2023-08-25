@@ -207,10 +207,7 @@ input {
   /* margin-bottom: 30px; */
 }
 
-.subscribe-check {
-  max-width: 25px;
-  max-height: 25px;
-}
+
 
 .check-span {
   display: inline-flex;
@@ -307,6 +304,12 @@ input {
     /* display: flex; */
     flex-wrap: wrap;
   }
+  .subscribe-form-btn {
+  
+  margin-top: 31px;
+  margin-bottom: 64px;
+  
+}
 }
 
 /* ------------------------------------------------------------------ */
