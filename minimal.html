@@ -6,15 +6,9 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style-minimal.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
   </head>
   <body>
     <section class="subscribe" id="subscribe">
@@ -22,97 +16,41 @@
         <div class="subcont">
           <div class="subcontainer">
             <h2 class="section-title">Newsletter</h2>
-            <p class="section-text">
-              Every week we will send you new designs and information about
-              sales.
-            </p>
+            <p class="section-text">Every week we will send you new designs and information about sales.</p>
             <form action="#" class="subscribe-form">
               <div class="wrap-subscribe-input">
-                <input
-                  type="text"
-                  class="subscribe-input"
-                  minlength="2"
-                  maxlength="16"
-                  required
-                  placeholder="Name"
-                  name="user-name"
-                />
+                <input type="text" class="subscribe-input" minlength="2" maxlength="16" required placeholder="Name" name="user-name" />
                 <svg class="subscribe-icon-error" width="24" height="24">
-                  <use
-                    href="./images/icons.svg#icon-ic_baseline-error-outline"
-                  ></use>
+                  <use href="./subscribe-images/images/icons.svg#icon-ic_baseline-error-outline"></use>
                 </svg>
               </div>
               <div class="wrap-subscribe-input">
-                <input
-                  type="email"
-                  class="subscribe-input"
-                  minlength="2"
-                  maxlength="16"
-                  required
-                  placeholder="Email"
-                  name="user-email"
-                />
+                <input type="email" class="subscribe-input" minlength="2" maxlength="16" required placeholder="Email" name="user-email" />
                 <svg class="subscribe-icon-error" width="24" height="24">
-                  <use
-                    href="./images/icons.svg#icon-ic_baseline-error-outline"
-                  ></use>
+                  <use href="./subscribe-images/images/icons.svg#icon-ic_baseline-error-outline"></use>
                 </svg>
               </div>
               <div class="checkbox-subscribe-input">
-                <input
-                  type="checkbox"
-                  class="subscribe-check visually-hidden"
-                  id="subscribe-user"
-                  name="user-checkbox"
-                  value="true"
-                />
+                <input type="checkbox" class="subscribe-check visually-hidden" id="subscribe-user" name="user-checkbox" value="true" />
                 <label for="subscribe-user" class="subscribe-label-text">
                   <span class="check-span">
                     <svg class="subscribe-icon-check" width="13" height="13">
-                      <use href="./images/icons.svg#icon-checkbox"></use>
+                      <use href="./subscribe-images/images/icons.svg#icon-checkbox"></use>
                     </svg>
                   </span>
-                  <span class="subscribe-accent"
-                    >Agree to subscribe to the newsletter</span
-                  >
+                  <span class="subscribe-accent">Agree to subscribe to the newsletter</span>
                 </label>
               </div>
               <button type="submit" class="subscribe-form-btn">Send</button>
-              <a href="clients.html">go to the clients.html</a>
+              
             </form>
           </div>
           <div class="subscribe-pic">
             <picture class="subscribe-picture">
-              <source
-                srcset="
-                  ./images/retina/dt-product-14-1x.jpg 1x,
-                  ./images/retina/dt-product-14-2x.jpg 2x
-                "
-                media="(min-width:1440px)"
-                type="image/jpeg"
-              />
-              <source
-                srcset="
-                  ./images/retina/tab-product-11-1x.jpg 1x,
-                  ./images/retina/tab-product-11-2x.jpg 2x
-                "
-                media="(min-width:768px)"
-                type="image/jpeg"
-              />
-              <source
-                srcset="
-                  ./images/retina/mob-product-7-1x.jpg 1x,
-                  ./images/retina/mob-product-7-2x.jpg 2x
-                "
-                media="(max-width:767px)"
-                type="image/jpeg"
-              />
-              <img
-                src="./images/retina/tab-product-11-1x.jpg"
-                alt="Book on the table near sofa"
-                width="704"
-              />
+              <source srcset="./subscribe-images/images/retina/dt-product-14-1x.jpg 1x, ./images/retina/dt-product-14-2x.jpg 2x" media="(min-width:1440px)" type="image/jpeg" />
+              <source srcset="./subscribe-images/images/retina/tab-product-11-1x.jpg 1x, ./images/retina/tab-product-11-2x.jpg 2x" media="(min-width:768px)" type="image/jpeg" />
+              <source srcset="./subscribe-images/images/retina/mob-product-7-1x.jpg 1x, ./images/retina/mob-product-7-2x.jpg 2x" media="(max-width:767px)" type="image/jpeg" />
+              <img src="./subscribe-images/images/retina/tab-product-11-1x.jpg" alt="Book on the table near sofa" width="704" />
             </picture>
           </div>
         </div>
